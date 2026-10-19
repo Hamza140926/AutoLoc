@@ -1,4 +1,5 @@
 package tn.esprit.hamzaslimani4ieti4.Domain;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -17,6 +18,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
+@JsonIgnoreProperties({"reservations", "hibernateLazyInitializer", "handler"})
 @Entity
 @Getter
 @Setter

@@ -1,4 +1,5 @@
 package tn.esprit.hamzaslimani4ieti4.Domain;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
@@ -20,6 +21,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
+@JsonIgnoreProperties({"paiements", "hibernateLazyInitializer", "handler"})
 @Entity
 @Getter
 @Setter

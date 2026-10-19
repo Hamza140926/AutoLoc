@@ -1,4 +1,5 @@
 package tn.esprit.hamzaslimani4ieti4.Domain;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
@@ -14,6 +15,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
+@JsonIgnoreProperties({"vehicules", "hibernateLazyInitializer", "handler"})
 @Entity
 @Getter
 @Setter

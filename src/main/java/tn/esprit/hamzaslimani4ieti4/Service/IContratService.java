@@ -1,0 +1,12 @@
+package tn.esprit.hamzaslimani4ieti4.Service;
+
+import java.util.List;
+import tn.esprit.hamzaslimani4ieti4.Domain.Contrat;
+
+public interface IContratService {
+    Contrat getById(Long id);
+    Contrat add(Contrat contrat);
+    List<Contrat> findAll();
+    Contrat update(Contrat contrat);
+    void deleteById(Long id);
+}
